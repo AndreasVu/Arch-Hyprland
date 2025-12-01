@@ -130,8 +130,6 @@ sddm="OFF"
 sddm_theme="OFF"
 xdph="OFF"
 zsh="OFF"
-pokemon="OFF"
-rog="OFF"
 dots="OFF"
 input_group="OFF"
 nvidia="OFF"
@@ -265,8 +263,6 @@ options_command+=(
     "quickshell" "Install quickshell for Desktop-Like Overview?" "OFF"
     "xdph" "Install XDG-DESKTOP-PORTAL-HYPRLAND (for screen share)?" "OFF"
     "zsh" "Install zsh shell with Oh-My-Zsh?" "OFF"
-    "pokemon" "Add Pokemon color scripts to your terminal?" "OFF"
-    "rog" "Are you installing on Asus ROG laptops?" "OFF"
     "dots" "Download and install pre-configured KooL Hyprland dotfiles?" "OFF"
 )
 
@@ -428,14 +424,6 @@ for option in "${options[@]}"; do
         zsh)
             echo "${INFO} Installing ${SKY_BLUE}zsh with Oh-My-Zsh...${RESET}" | tee -a "$LOG"
             execute_script "zsh.sh"
-            ;;
-        pokemon)
-            echo "${INFO} Adding ${SKY_BLUE}Pokemon color scripts to terminal...${RESET}" | tee -a "$LOG"
-            execute_script "zsh_pokemon.sh"
-            ;;
-        rog)
-            echo "${INFO} Installing ${SKY_BLUE}ROG laptop packages...${RESET}" | tee -a "$LOG"
-            execute_script "rog.sh"
             ;;
         dots)
             echo "${INFO} Installing pre-configured ${SKY_BLUE}KooL Hyprland dotfiles...${RESET}" | tee -a "$LOG"

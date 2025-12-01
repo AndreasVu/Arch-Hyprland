@@ -102,7 +102,6 @@ packages=(
     "nwg-displays" "display monitor configuration app" "off"
     "nwg-look" "gtk settings app" "off"
     "pamixer" "pamixer" "off"
-    "pokemon-colorscripts-git" "terminal colorscripts" "off"
     "pavucontrol" "pavucontrol" "off"
     "playerctl" "playerctl" "off"
     "pyprland" "pyprland" "off"
@@ -238,14 +237,6 @@ while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
     fi
 done
 
-printf "\n%.0s" {1..1}
-printf "\n%s${SKY_BLUE}Attempting to remove locally installed packages${RESET}\n" "${NOTE}"
-for file in ags pokemon-colorscripts; do
-    if [ -f "/usr/local/bin/$file" ]; then
-        sudo rm "/usr/local/bin/$file"
-        echo "$file removed."
-    fi
-done
 
 printf "\n%.0s" {1..1}
 printf "\n%s${SKY_BLUE}Attempting to remove selected directories${RESET}\n" "${NOTE}"

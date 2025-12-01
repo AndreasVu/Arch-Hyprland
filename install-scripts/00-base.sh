@@ -6,6 +6,10 @@ base=(
   base-devel
   archlinux-keyring
   findutils
+  firefox
+  spotify-launcher
+  discord
+  steam
 )
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
