@@ -10,6 +10,7 @@ base=(
   spotify-launcher
   discord
   steam
+  flatpak
 )
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
